@@ -8,7 +8,7 @@
 
 [1, 7]->такого числа в массиве нет*/
 
-//В первом методе и задаем, и печатаем массив.
+//В первом методе задаем и выводим в консоль массив.
 int[,] GetArray(int minValue, int maxValue)
 
 {
@@ -54,10 +54,12 @@ void CheckElement(int[,] twoDimArr, int[] arr)
 
     if ((arr[0] >= twoDimArr.GetLength(0)) || arr[1] >= (twoDimArr.GetLength(1)))
         Console.WriteLine($"Элемента с индексом {(arr[0], arr[1])} в массиве нет.");
-    else 
+
+    else
         Console.WriteLine($"Элемент с индексом {(arr[0], arr[1])} равен {twoDimArr[arr[0], arr[1]]}");
-        Console.WriteLine();
+    Console.WriteLine();
 }
 
 CheckElement(GetArray(1, 10), GetIndexes());
+
 
