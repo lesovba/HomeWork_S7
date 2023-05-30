@@ -48,6 +48,7 @@ int[] GetIndexes()
     Console.WriteLine();
     return indexes;
 }
+
 //Третьим методом проверяем элемент по индексам, ищем в массиве и выводим соответствующее сообщение. 
 void CheckElement(int[,] twoDimArr, int[] arr)
 {
